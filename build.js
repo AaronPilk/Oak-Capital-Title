@@ -86,7 +86,7 @@ const footer = () => `
           <img class="lock-mark" src="assets/img/mark-white.png" alt="" width="722" height="720" />
           <img class="lock-word" src="assets/img/wordmark-white.png" alt="Oak Capital Title" width="1017" height="208" />
         </div>
-        <p>Residential and commercial title insurance from Charlotte, North Carolina — serving every county in North and South Carolina. Independent, accurate, and available when you need us.</p>
+        <p>An independent title agency in Charlotte, North Carolina. We search, insure and close residential and commercial property in every county in both Carolinas — and we answer the phone.</p>
       </div>
       <div>
         <h4>Explore</h4>
@@ -106,25 +106,25 @@ ${NAV_ITEMS.map(([h, l]) => `          <a href="${h}">${l}</a>`).join('\n')}
     </div>
     <div class="footer__bottom">
       <span>&copy; <span id="year">2026</span> Oak Capital Title. All rights reserved.</span>
-      <span>Residential &amp; Commercial Title Insurance &middot; Charlotte, NC &middot; NC &amp; SC</span>
+      <span>Title searches &middot; Title insurance &middot; Closings &middot; Charlotte, NC</span>
     </div>
   </div>
 </footer>
 `;
 
 const PAGES = [
-  { file: 'index.html', title: 'Oak Capital Title — Residential &amp; Commercial Title Insurance in Charlotte, NC',
-    desc: 'Oak Capital Title is an independent title agency in Charlotte, North Carolina providing residential and commercial title insurance across North and South Carolina. Fast, accurate, and available nights and weekends.',
-    cta: ['Available nights &amp; weekends', 'Ready to order your title?', "Send us your request and our team will get started right away. Questions? We're accessible early mornings and late evenings — whenever you need us."] },
-  { file: 'services.html', title: 'Services — Oak Capital Title | Residential, Closing &amp; Commercial Title',
-    desc: 'Residential and land title insurance, closing services, and commercial title insurance across North and South Carolina — backed by more than 20 years of experience.',
-    cta: ["Let's get moving", 'Start your transaction today', 'Whatever the property type, our team is ready to get your title moving — accurately and fast. Available nights and weekends.'] },
-  { file: 'homeowners.html', title: 'Homeowners — Oak Capital Title | Buyers, Sellers &amp; Title Insurance Explained',
-    desc: "For buyers and sellers: what title insurance is, what it covers and doesn't, how it works, who pays, and how much it costs — explained by Oak Capital Title.",
-    cta: ["Let's get moving", 'Protect your investment', "Buying or selling in the Carolinas? We'll make your closing easy — with clear title, great communication, and service available nights and weekends."] },
+  { file: 'index.html', title: 'Oak Capital Title — Title Insurance in Charlotte, NC | Residential &amp; Commercial',
+    desc: 'Oak Capital Title is an independent title agency in Charlotte, NC. Title searches, title insurance and closings for residential, land and commercial property in every county in North and South Carolina. Phones on nights and weekends.',
+    cta: ['Phones on, seven days', 'Send us the file', 'Email the contract and we open it the same day. Not sure what you need yet? Call — you will get a person who works title, not a switchboard.'] },
+  { file: 'services.html', title: 'Services — Oak Capital Title | Residential, Land, Commercial &amp; Closings',
+    desc: 'Title searches and title insurance for homes, land and commercial property across North and South Carolina, plus closing attorney and notary coordination — in person or remote. Charlotte, NC.',
+    cta: ['Ready when you are', 'Put a file in front of us', 'House, hundred-acre tract or a shopping center — same desk, same day it lands. Tell us the closing date and we will work backwards from it.'] },
+  { file: 'homeowners.html', title: 'Title Insurance Explained — Oak Capital Title | For Carolina Buyers &amp; Sellers',
+    desc: "What title insurance is, what it covers, what it doesn't, who pays for it and what it costs — explained plainly for buyers and sellers in North and South Carolina by Oak Capital Title.",
+    cta: ['One premium, one time', 'Protect the biggest check you will write', "Buying or selling in the Carolinas? We will keep the title clean and the closing boring — which is exactly what you want it to be."] },
   { file: '404.html', title: 'Page not found — Oak Capital Title', desc: "That page doesn't exist. Find title services, homeowner resources, or contact Oak Capital Title in Charlotte, NC.", cta: null, noindex: true },
-  { file: 'contact.html', title: 'Contact — Oak Capital Title | Order Title in NC &amp; SC',
-    desc: `Contact Oak Capital Title to order title or ask a question. Based in Charlotte, NC and available nights and weekends across North and South Carolina. Call ${SITE.phonePretty} or email ${SITE.email}.`,
+  { file: 'contact.html', title: 'Contact Oak Capital Title — Order Title in NC &amp; SC | Charlotte',
+    desc: `Order title, request a quote or ask a question. Oak Capital Title, Charlotte NC, covering every county in North and South Carolina. Call ${SITE.phonePretty} or email ${SITE.email}.`,
     cta: null },
 ];
 
@@ -158,7 +158,7 @@ const SCHEMA = `<script type="application/ld+json">
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
   "name": "Oak Capital Title",
-  "description": "Independent title agency providing residential and commercial title insurance across North and South Carolina.",
+  "description": "Independent Charlotte, NC title agency. Title searches, title insurance and closing coordination for residential, land and commercial property throughout North and South Carolina.",
   "url": "${SITE.url}",
   "telephone": "+1-704-467-3031",
   "email": "${SITE.email}",
