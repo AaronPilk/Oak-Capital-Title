@@ -38,41 +38,36 @@
         </div>
       </div>
 
-      <form class="form-card" id="contactForm" data-reveal novalidate>
-        <h3>Start a file</h3>
-        <p class="form-intro">Fill this in and it opens your email with everything already written. Or skip it and call &mdash; that works too.</p>
-        <div class="form-row">
-          <div class="field">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" placeholder="Your full name" autocomplete="name" required />
-          </div>
-          <div class="field">
-            <label for="phone">Phone</label>
-            <input type="tel" id="phone" name="phone" placeholder="(704) 000-0000" autocomplete="tel" />
-          </div>
+      <div class="action-card" data-reveal>
+        <h3>Two ways in</h3>
+        <p class="action-card__intro">No forms, no portal, no account to create. Email the file or pick up the phone &mdash; both land with the same person.</p>
+
+        <div class="action-card__buttons">
+          <a href="{{ORDER}}" class="btn btn--primary btn--block">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+            Email us the file
+          </a>
+          <a href="tel:{{TEL}}" class="btn btn--ghost btn--block">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Call {{PHONE_PRETTY}}
+          </a>
         </div>
-        <div class="field">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="you@email.com" autocomplete="email" required />
+
+        <div class="action-card__addr">
+          <a href="mailto:{{EMAIL}}">{{EMAIL}}</a>
         </div>
-        <div class="field">
-          <label for="topic">What is this about?</label>
-          <select id="topic" name="topic">
-            <option>Ordering title</option>
-            <option>Asking for a quote</option>
-            <option>Residential or land</option>
-            <option>Commercial</option>
-            <option>Closing coordination</option>
-            <option>Just a question</option>
-          </select>
+
+        <div class="action-card__note">
+          <h4>Helpful to include, if you have it</h4>
+          <ul class="checklist checklist--tight">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4 12 14.01l-3-3"/></svg>The property address</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4 12 14.01l-3-3"/></svg>The closing date you are working toward</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4 12 14.01l-3-3"/></svg>The contract, if it is signed</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4 12 14.01l-3-3"/></svg>Who else is on the deal &mdash; agent, lender, attorney</li>
+          </ul>
+          <p>Do not have all of it yet? Send what you have. We will ask for the rest.</p>
         </div>
-        <div class="field">
-          <label for="message">Details</label>
-          <textarea id="message" name="message" placeholder="Property address, closing date, who else is on the deal, or whatever you are trying to work out&hellip;"></textarea>
-        </div>
-        <button type="submit" class="btn btn--primary" style="width:100%;justify-content:center;">Send it over {{ARROW}}</button>
-        <p class="form-note" id="formNote">This opens your own email app with the details filled in. Rather talk? {{PHONE_PRETTY}}</p>
-      </form>
+      </div>
 
     </div>
   </div>
